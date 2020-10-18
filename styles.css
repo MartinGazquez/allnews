@@ -18,6 +18,9 @@ li {
     background-color: blue;
     color: white;
 }
+.imagenews {
+    width: 100%;
+}
 .divaside {
     background-color: lightblue;
     color: lightcoral;
@@ -27,3 +30,9 @@ footer {
     color: blue;
     margin-top: 30px;
 }
+@media only screen and (max-width: 768px){
+    .navbar {
+      display: none;
+    }
+
+  }
