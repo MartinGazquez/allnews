@@ -2,37 +2,59 @@ body {
     align-content: center;
     text-align: center;
 }
-.divheader {
-    color: blue;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;  
-    background-color: grey;
-}
+
 li {
-    color: orange;
-    background-color: black;
+    color:white;
+    background-color: lightblue;
     border-color: orange;
     display: inline;
 }
+.iconmenu {
+    display: none;  
+  }
+.content {
+    display: flex;
+    justify-content: space-between;
+  }
+  section {
+    flex-basis: 65%;
+  }
+  aside {
+    flex-basis: 35%;
+  }  
 .divfirstnews {
-    background-color: blue;
-    color: white;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
 }
 .imagenews {
     width: 100%;
 }
 .divaside {
-    background-color: lightblue;
-    color: lightcoral;
+    background-color: whitesmoke;
+    color: black;
 }
 footer {
     background-color: gray;
     color: blue;
     margin-top: 30px;
 }
+.linksamepage {
+    font-style: italic;
+    background-color:lightblue;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+}
 @media only screen and (max-width: 768px){
-    .navbar {
+    .navbar a {
       display: none;
     }
+    .iconmenu {
+      display: block;  
+    }
+    .content {
+        display: inline;
+      }
 
   }
