@@ -33,6 +33,9 @@ li {
 .divaside {
     background-color: whitesmoke;
     color: black;
+    border-style: solid;
+    border-color: black;
+    margin-top: 20px;
 }
 footer {
     background-color: gray;

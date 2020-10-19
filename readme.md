@@ -1,1 +1,1 @@
-https://martingazquez.github.io/allnews/
+https://martingazquez.github.io/allnews/allnews.html
