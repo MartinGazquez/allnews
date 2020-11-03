@@ -31,8 +31,8 @@
         <div class="column">
             <input type="tel" placeholder="Phone Number">
             <sub>Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis</sub>
-            <input type="text" placeholder="Address">
-            <sub>Al menos 5 caracteres, con letras, números y un espacio en el medio</sub>
+            <input id="addressId" onblur="address ()" onfocus="resetValidate ('messageAddress')" type="text" placeholder="Address">
+            <sub id="messageAddress" class="error-message">Al menos 5 caracteres, con letras, números y un espacio en el medio</sub>
             <input type="text" placeholder="City">
             <sub>Al menos 3 caracteres</sub>
             <input type="number" placeholder="Postal Code">
