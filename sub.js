@@ -78,6 +78,19 @@ function age () {
    
 }
 
+//Phone Numbre Validation
+
+function phone () {
+    var validatePhone = document.getElementById("phoneId").value;
+    var phoneErrorMessage = document.getElementById("messagePhone");
+
+    if (validatePhone <7) {
+    
+    phoneErrorMessage.style.display = "block";
+    }    
+   
+}      
+
 //Adress Validation
 
 function address () {
@@ -96,3 +109,24 @@ function address () {
     }
      
 }
+
+// City Validation
+//<input id="cityId" onblur="city ()" onfocus="resetValidate ('messageCity')" type="text" placeholder="City">
+//<sub id="messageCity" class="error-message">Al menos 3 caracteres</sub>
+
+function city () {
+    var validateCity = document.getElementById("cityId").value;
+    var cityErrorMessage = document.getElementById("messageCity");
+    var charters = validateCity.length
+    if (charters <3) {
+    
+    cityErrorMessage.style.display = "block";
+    }    
+   
+}      
+
+
+
+//Postal Code Validation
+
+//NID

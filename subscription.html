@@ -29,12 +29,12 @@
             <sub id="messageAge" class="error-message">Número entero mayor o igual a 18</sub>
         </div>
         <div class="column">
-            <input type="tel" placeholder="Phone Number">
-            <sub>Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis</sub>
+            <input id="phoneId" onblur="phone ()" onfocus="resetValidate ('messagePhone')" type="number" placeholder="Phone Number">
+            <sub id="messagePhone" class="error-message">Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis</sub>
             <input id="addressId" onblur="address ()" onfocus="resetValidate ('messageAddress')" type="text" placeholder="Address">
             <sub id="messageAddress" class="error-message">Al menos 5 caracteres, con letras, números y un espacio en el medio</sub>
-            <input type="text" placeholder="City">
-            <sub>Al menos 3 caracteres</sub>
+            <input id="cityId" onblur="city ()" onfocus="resetValidate ('messageCity')" type="text" placeholder="City">
+            <sub id="messageCity" class="error-message">Al menos 3 caracteres</sub>
             <input type="number" placeholder="Postal Code">
             <sub>Al menos 3 caracteres</sub>
             <input type="number" placeholder="NID">
