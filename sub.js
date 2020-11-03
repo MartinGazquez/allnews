@@ -12,10 +12,10 @@ function name (event) {
      
 }
 
-inputName.addEventListener ("blur", name);
+    inputName.addEventListener ("blur", name);
 
 function resetValidate (nameMessage) {
-     document.getElementById(nameMessage).style.display = "none";
+    document.getElementById(nameMessage).style.display = "none";
 }
  
 //Email Validation
@@ -27,9 +27,9 @@ function email () {
   var com = email.indexOf(".com");
   var emailErrorMessage = document.getElementById("messageEmail");
 
-  if (a === -1 || com === -1) {
+    if (a === -1 || com === -1) {
     
-    emailErrorMessage.style.display = "block";
+      emailErrorMessage.style.display = "block";
     }    
    
 }
@@ -73,8 +73,8 @@ function age () {
 
     if (validateAge <18) {
     
-    ageErrorMessage.style.display = "block";
-                         }    
+       ageErrorMessage.style.display = "block";
+    }    
    
 }
 
@@ -87,7 +87,7 @@ function phone () {
 
     if (cantNumber <7) {
     
-    phoneErrorMessage.style.display = "block";
+       phoneErrorMessage.style.display = "block";
     }    
    
 }      
@@ -105,7 +105,7 @@ function address () {
     var firstWord = inputAdress.substring (0 , space);
     var secondword = inputAdress.substring (space + 1);
     
-    if (letters <5 || space === -1 || !contentLetters || !contentNumbers || firstWord.length === 0 || secondword.length === 0 ){
+    if (letters <5 || space === -1 || !contentLetters || !contentNumbers || firstWord.length === 0 || secondword.length === 0){
        errorMessage.style.display = "block";     
     }
      
@@ -119,7 +119,7 @@ function city () {
     var charters = validateCity.length
     if (charters <3) {
     
-    cityErrorMessage.style.display = "block";
+       cityErrorMessage.style.display = "block";
     }    
    
 }      
@@ -135,14 +135,12 @@ function postal () {
 
     if (cantNumberPostal <3) {
     
-    postalErrorMessage.style.display = "block";
+       postalErrorMessage.style.display = "block";
     }    
    
 }
 
 //NID
-//<input id="nidId" onblur="nid ()" onfocus="resetValidate ('messageNid')" type="number" placeholder="NID">
-//<sub>Número de 7 u 8 digitos</sub>
 
 function nid () {
     var validateNid = document.getElementById("nidId").value;
@@ -151,7 +149,7 @@ function nid () {
 
     if (cantNumberNid <7 | cantNumberNid >8) {
     
-    nidErrorMessage.style.display = "block";
+       nidErrorMessage.style.display = "block";
     }    
    
 }
