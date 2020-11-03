@@ -35,10 +35,10 @@
             <sub id="messageAddress" class="error-message">Al menos 5 caracteres, con letras, números y un espacio en el medio</sub>
             <input id="cityId" onblur="city ()" onfocus="resetValidate ('messageCity')" type="text" placeholder="City">
             <sub id="messageCity" class="error-message">Al menos 3 caracteres</sub>
-            <input type="number" placeholder="Postal Code">
-            <sub>Al menos 3 caracteres</sub>
-            <input type="number" placeholder="NID">
-            <sub>Número de 7 u 8 digitos</sub>
+            <input id="postalId" onblur="postal ()" onfocus="resetValidate ('messagePostal')" type="text" placeholder="Postal Code">
+            <sub id="messagePostal" class="error-message">Al menos 3 caracteres</sub>
+            <input id="nidId" onblur="nid ()" onfocus="resetValidate ('messageNid')" type="number" placeholder="NID">
+            <sub id="messageNid" class="error-message">Número de 7 u 8 digitos</sub>
         </div>
     </div>
     <button>

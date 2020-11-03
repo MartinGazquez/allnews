@@ -83,8 +83,9 @@ function age () {
 function phone () {
     var validatePhone = document.getElementById("phoneId").value;
     var phoneErrorMessage = document.getElementById("messagePhone");
+    var cantNumber = validatePhone.length;
 
-    if (validatePhone <7) {
+    if (cantNumber <7) {
     
     phoneErrorMessage.style.display = "block";
     }    
@@ -111,8 +112,6 @@ function address () {
 }
 
 // City Validation
-//<input id="cityId" onblur="city ()" onfocus="resetValidate ('messageCity')" type="text" placeholder="City">
-//<sub id="messageCity" class="error-message">Al menos 3 caracteres</sub>
 
 function city () {
     var validateCity = document.getElementById("cityId").value;
@@ -129,4 +128,31 @@ function city () {
 
 //Postal Code Validation
 
+function postal () {
+    var validatePostal = document.getElementById("postalId").value;
+    var postalErrorMessage = document.getElementById("messagePostal");
+    var cantNumberPostal = validatePostal.length;
+
+    if (cantNumberPostal <3) {
+    
+    postalErrorMessage.style.display = "block";
+    }    
+   
+}
+
 //NID
+//<input id="nidId" onblur="nid ()" onfocus="resetValidate ('messageNid')" type="number" placeholder="NID">
+//<sub>Número de 7 u 8 digitos</sub>
+
+function nid () {
+    var validateNid = document.getElementById("nidId").value;
+    var nidErrorMessage = document.getElementById("messageNid");
+    var cantNumberNid = validateNid.length;
+
+    if (cantNumberNid <7 | cantNumberNid >8) {
+    
+    nidErrorMessage.style.display = "block";
+    }    
+   
+}
+
