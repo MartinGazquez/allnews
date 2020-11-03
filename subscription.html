@@ -23,8 +23,8 @@
             <sub id= "messageEmail" class= "error-message" >debe tener un formato de email válido</sub>
             <input id= "passwordId" onblur="password ()" onfocus="resetValidate ('messagePassword')" type="password" placeholder="Password">
             <sub id="messagePassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
-            <input type="password" placeholder="Repeat Password">
-            <sub>Al menos 8 caracteres, formados por letras y números</sub>
+            <input id="repeatPasswordId" onblur="repeatPassword ()" onfocus="resetValidate ('messageRepeatPassword')" type="password" placeholder="Repeat Password">
+            <sub id="messageRepeatPassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
             <input id="ageId" onblur="age ()" onfocus="resetValidate ('messageAge')" type="number" placeholder="Age">
             <sub id="messageAge" class="error-message">Número entero mayor o igual a 18</sub>
         </div>

@@ -55,8 +55,15 @@ function password() {
 
 //Repeat Password Validation
 
-
-
+function repeatPassword () {
+    var password = document.getElementById("passwordId").value;
+    var repeatpas = document.getElementById("repeatPasswordId").value;
+    var repeatInvalid = document.getElementById("messageRepeatPassword");
+    
+    if (repeatpas !== password) {
+        repeatInvalid.style.display = "block";
+    }
+  }
 //Age Validation
 
 function age () {
