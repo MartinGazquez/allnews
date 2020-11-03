@@ -154,3 +154,9 @@ function nid () {
    
 }
 
+//Send and Notification
+
+function sendAll () {
+    var showAllForm = 
+}
+

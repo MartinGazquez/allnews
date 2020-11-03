@@ -18,31 +18,31 @@
     <div class="columnHead">
         <div class="column">
             <input onfocus= "resetValidate ('messageFullName')"  id="full-name" type="text" placeholder="Full Name">
-            <sub id= "messageFullName" class="error-message">Debe tener más de 6 letras y al menos un espacio entre medio</sub>
+            <sub id= "messageFullName" class="error-message">It must have more than 6 letters and at least one space in between</sub>
             <input id="mailId" onblur="email ()" onfocus="resetValidate ('messageEmail')" type="email" placeholder="Email">
-            <sub id= "messageEmail" class= "error-message" >debe tener un formato de email válido</sub>
+            <sub id= "messageEmail" class= "error-message" >must have a valid email format</sub>
             <input id= "passwordId" onblur="password ()" onfocus="resetValidate ('messagePassword')" type="password" placeholder="Password">
-            <sub id="messagePassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
+            <sub id="messagePassword" class="error-message">At least 8 characters, consisting of letters and numbers</sub>
             <input id="repeatPasswordId" onblur="repeatPassword ()" onfocus="resetValidate ('messageRepeatPassword')" type="password" placeholder="Repeat Password">
-            <sub id="messageRepeatPassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
+            <sub id="messageRepeatPassword" class="error-message">At least 8 characters, consisting of letters and numbers</sub>
             <input id="ageId" onblur="age ()" onfocus="resetValidate ('messageAge')" type="number" placeholder="Age">
-            <sub id="messageAge" class="error-message">Número entero mayor o igual a 18</sub>
+            <sub id="messageAge" class="error-message">Whole number greater than or equal to 18</sub>
         </div>
         <div class="column">
             <input id="phoneId" onblur="phone ()" onfocus="resetValidate ('messagePhone')" type="number" placeholder="Phone Number">
-            <sub id="messagePhone" class="error-message">Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis</sub>
+            <sub id="messagePhone" class="error-message">Number of at least 7 digits, do not accept spaces, hyphens or parentheses</sub>
             <input id="addressId" onblur="address ()" onfocus="resetValidate ('messageAddress')" type="text" placeholder="Address">
-            <sub id="messageAddress" class="error-message">Al menos 5 caracteres, con letras, números y un espacio en el medio</sub>
+            <sub id="messageAddress" class="error-message">At least 5 characters, with letters, numbers and a space in between</sub>
             <input id="cityId" onblur="city ()" onfocus="resetValidate ('messageCity')" type="text" placeholder="City">
-            <sub id="messageCity" class="error-message">Al menos 3 caracteres</sub>
+            <sub id="messageCity" class="error-message">At least 3 characters</sub>
             <input id="postalId" onblur="postal ()" onfocus="resetValidate ('messagePostal')" type="text" placeholder="Postal Code">
-            <sub id="messagePostal" class="error-message">Al menos 3 caracteres</sub>
+            <sub id="messagePostal" class="error-message">At least 3 characters</sub>
             <input id="nidId" onblur="nid ()" onfocus="resetValidate ('messageNid')" type="number" placeholder="NID">
-            <sub id="messageNid" class="error-message">Número de 7 u 8 digitos</sub>
+            <sub id="messageNid" class="error-message">7 or 8 digit number</sub>
         </div>
     </div>
     <button>
-        <a class="navbar" href="#">Send</a>
+        <a id="send" onclick="sendAll ()" class="navbar" href="#">Send</a>
     </button>
     <footer>All News for All Us</footer>
     <script src="sub.js"></script>
