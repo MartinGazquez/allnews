@@ -1,3 +1,5 @@
+//Name Validation
+
 var inputName = document.getElementById ("full-name");
 var errorMessage = document.getElementsByClassName ("error-message");
 
@@ -16,8 +18,9 @@ function resetValidate (nameMessage) {
      document.getElementById(nameMessage).style.display = "none";
 }
  
+//Email Validation
 function email () {
-    var email= document.getElementById("mailId").value;
+  var email = document.getElementById("mailId").value;
     
   var a = email.indexOf("@");
   var com = email.indexOf(".com");
@@ -27,5 +30,40 @@ function email () {
     
     emailErrorMessage.style.display = "block";
     }    
+   
+}
+
+//Password Validation
+//<input id= "passwordId" onblur="password ()" onfocus="resetValidate ('messagePassword')" type="password" placeholder="Password">
+//<sub id="messagePassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
+function validate_password() {
+    var password = document.getElementById("passwordId").value;
+    var passwordInvalid = document.getElementById("messagePassword");
+    var Letters = password.length;
+    var contentLetters = lettersRegExp.test(password);
+    var contentNumbers = numbersRegExp.test(password);
+    
+  
+    if (Letters < 8 || !contentLetters || !contentNumbers) {
+      passwordInvalid.innerHTML = passwordIncorrect;
+      passwordInvalid.style.display = "block";
+      document.getElementById("password").classList.add("form-input-invalid");
+      return passwordIncorrect;
+    } else {
+      reset_validate("password", "messagePassword");
+      return true;
+    }
+  } 
+
+//Age Validation
+function age () {
+    var validateAge = document.getElementById("ageId").value;
+    
+    var ageErrorMessage = document.getElementById("messageAge");
+
+    if (validateAge <18) {
+    
+    ageErrorMessage.style.display = "block";
+                         }    
    
 }

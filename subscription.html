@@ -21,12 +21,12 @@
             <sub id= "messageFullName" class="error-message">Debe tener más de 6 letras y al menos un espacio entre medio</sub>
             <input id="mailId" onblur="email ()" onfocus="resetValidate ('messageEmail')" type="email" placeholder="Email">
             <sub id= "messageEmail" class= "error-message" >debe tener un formato de email válido</sub>
-            <input type="password" placeholder="Password">
-            <sub>Al menos 8 caracteres, formados por letras y números</sub>
+            <input id= "passwordId" onblur="password ()" onfocus="resetValidate ('messagePassword')" type="password" placeholder="Password">
+            <sub id="messagePassword" class="error-message">Al menos 8 caracteres, formados por letras y números</sub>
             <input type="password" placeholder="Repeat Password">
             <sub>Al menos 8 caracteres, formados por letras y números</sub>
-            <input type="number" placeholder="Age">
-            <sub>Número entero mayor o igual a 18</sub>
+            <input id="ageId" onblur="age ()" onfocus="resetValidate ('messageAge')" type="number" placeholder="Age">
+            <sub id="messageAge" class="error-message">Número entero mayor o igual a 18</sub>
         </div>
         <div class="column">
             <input type="tel" placeholder="Phone Number">
