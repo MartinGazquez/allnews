@@ -17,10 +17,10 @@
     </div> 
     <div class="columnHead">
         <div class="column">
-            <input id="full-name" type="text" placeholder="Full Name">
-            <sub>Debe tener más de 6 letras y al menos un espacio entre medio</sub>
-            <input type="email" placeholder="Email">
-            <sub>debe tener un formato de email válido</sub>
+            <input onfocus= "resetValidate ('messageFullName')"  id="full-name" type="text" placeholder="Full Name">
+            <sub id= "messageFullName" class="error-message">Debe tener más de 6 letras y al menos un espacio entre medio</sub>
+            <input id="mailId" onblur="email ()" onfocus="resetValidate ('messageEmail')" type="email" placeholder="Email">
+            <sub id= "messageEmail" class= "error-message" >debe tener un formato de email válido</sub>
             <input type="password" placeholder="Password">
             <sub>Al menos 8 caracteres, formados por letras y números</sub>
             <input type="password" placeholder="Repeat Password">
@@ -45,5 +45,6 @@
         <a class="navbar" href="#">Send</a>
     </button>
     <footer>All News for All Us</footer>
+    <script src="sub.js"></script>
 </body>
 </html>
